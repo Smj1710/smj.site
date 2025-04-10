@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت سینا مهاجر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
+    <style>
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #0a3b08;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        body {
+            font-family: 'Vazir', Tahoma, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            transition: all 1s ease;
+        }
+
+        header {
+            background-color: #0a3b08;
+            color: #fff;
+            text-align: center;
+            padding: 50px 50px 80px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            border-radius: 0px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            animation: slideIn 1s ease-out;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .custom-shape-divider-bottom-1744306011 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1744306011 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 116px;
+}
+
+.custom-shape-divider-bottom-1744306011 .shape-fill {
+    fill: #27741d;
+}
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+
+        h2.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #0a3b08;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 50px;
+        }
+
+        button:hover {
+            background-color: #0a3b08;
+        }
+
+        .footer {
+            background-color: #0a3b08;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <h1>سلام! من سینا مهاجر هستم</h1>
+        <p>ساخت سایت‌های زیبا و حرفه‌ای</p>
+        <div class="custom-shape-divider-bottom-1744306011">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+    <div class="container">
+        <h2>درباره من</h2>
+        <p>من سینا مهاجر هستم و در حال یادگیری طراحی سایت هستم</p>
+        <h2>مهارت‌ها</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>طراحی ریسپانسیو</li>
+        </ul>
+        <h2>ارتباط با من</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="نام شما" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="ایمیل شما" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="پیام شما" rows="5" required></textarea>
+            </div>
+            <button type="submit">ارسال</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 سینا مهاجر</p>
+    </div>
+
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader-wrapper");
+            loader.style.display = "none";
+        });
+
+        const h2Elements = document.querySelectorAll('h2');
+        function checkVisibility() {
+            const scrollPosition = window.scrollY;
+
+            h2Elements.forEach((h2) => {
+                if (h2.getBoundingClientRect().top <= window.innerHeight) {
+                    h2.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility();
+    </script>
+</body>
+</html>
